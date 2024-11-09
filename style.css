@@ -1,0 +1,102 @@
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: hsl(271, 76%, 53%);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+/* ESTILO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+    margin-right: 150px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #7e7e7e;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+ .btn-contato button:hover{
+ box-shadow: 0px 0px 8px hsla(271, 76%, 53%, 0.856);   
+ transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+section.topo-site h1{
+    padding: 30px 3%;
+    color: #fff;
+    font-size: 42px;
+    line-height: 45px;
+}
+
+.img-topo img{
+    border-radius: 300px;
+    height: 400px;
+}
+.topo-site .txt-topo h1 span{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.topo-site .txt-topo p{
+    color: #fff;
+    margin: 40px 0;
+    width: 92%;
+}
