@@ -130,6 +130,42 @@ h2 {
     color: #9c5ff2;
 }
 
+@media (max-width: 768px) {
+    section.topo-site .flex {
+        flex-direction: column;
+        gap: 30px; 
+    }
+
+    section.topo-site h1 {
+        font-size: 32px; 
+    }
+
+    .img-topo img {
+        height: 250px; 
+    }
+
+    .topo-site .txt-topo p {
+        width: 100%;
+    }
+
+    .contact-button {
+        padding: 12px 30px; 
+    }
+}
+
+@media (max-width: 480px) {
+    section.topo-site h1 {
+        font-size: 28px; 
+    }
+
+    .img-topo img {
+        height: 200px; 
+    }
+
+    .contact-button {
+        padding: 12px 25px; 
+    }
+}
 /* Sobre */
 .sobre-mim {
     margin: 50px auto;
