@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <title>RLS DEV</title>
 </head>
 
@@ -26,17 +30,12 @@
                 <ul>
 
                     <li> <a href="#">Início</a></li>
-                    <li> <a href="#">Tecnologias</a></li>
-                    <li> <a href="#">Sobre</a></li>
-                <li> <a href="#">Projetos</a></li>
-            </ul>
+                    <li> <a href="#about">Sobre</a></li>
+                    <li> <a href="#technologies">Tecnologias</a></li>
+                    <li> <a href="#projects">Projetos</a></li>
+                </ul>
             </nav>
 
-<div class="btn-contato">
-<a href="#">
-    <button>Contato</button>
-</a>
-</div> <!--btn-contato-->
         </div> <!--interface -->
 
     </header>
@@ -47,16 +46,18 @@
                 <div class="flex">
                     <div class="txt-topo">
                         <h1>TRANSFORMANDO DESAFIOS EM CÓDIGO E DEDICAÇÃO EM SOLUÇÕES<span>.</span></h1>
-                    <p>Minha jornada é marcada pela evolução constante e pelo compromisso de entregar resultados que impulsionem mudanças reais.</p>
-                    <div class="btn-contato">
-                        <a href="#">
-                            <button>Entre em contato</button>
-                        </a>
-                    </div>
-                </div> <!--txt-topo-->
-                
+                        <p>Minha jornada é marcada pela evolução constante e pelo compromisso de entregar resultados que
+                            impulsionem mudanças reais.</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button><a href="https://wa.me/5585981637405" class="contact-button">Entre em
+                                        Contato</a></button>
+                            </a>
+                        </div>
+                    </div> <!--txt-topo-->
+
                     <div class="img-topo">
-                        <img src="images/foto-portfolio.png" alt="Imagem-Eu">
+                        <img src="images/foto-portfolio (1).png" alt="Imagem-Eu">
                     </div><!--img-topo-->
 
                 </div><!--flex-->
@@ -65,35 +66,107 @@
 
         </section><!--topo-do-site-->
 
+        <!-- sobre mim -->
+        <section id="about" class="sobre-mim">
+            <h2>Sobre Mim</h2>
+            <p>Sou Gabriella Rodrigues Lopes, desenvolvedora Full Stack júnior com experiência em React.js, Node.js e
+                bancos de dados relacionais como MySQL e PostgreSQL. Após formação em Farmácia e atuar por 4 anos na
+                área, decidi seguir para área de tecnologia, concluí o curso de Desenvolvimento Full
+                Stack. Atualmente cursando Análise e Desenvolvimento de Sistemas e buscando oportunidades
+                para aplicar minhas habilidades e continuar evoluindo como profissional. Sou uma pessoa apaixonada por
+                desafios, aprendizado constante e busco sempre criar
+                soluções eficientes e de qualidade.</p>
+        </section>
+        <section class="technologies" id="technologies">
+            <div class="container">
+                <h2>Tecnologias</h2>
+                <div class="technology-grid">
+                    <div class="technology-category" id="frontend">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>React.js</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <div class="technology-category" id="backend">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>JWT</li>
+                        </ul>
+                    </div>
+                    <div class="technology-category" id="database">
+                        <h3>Banco de Dados</h3>
+                        <ul>
+                            <li>MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="technology-category" id="tools">
+                        <h3>Ferramentas</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                            <li>Docker</li>
+                            <li>Supabase</li>
+                        </ul>
+                    </div>
+                    <div class="technology-category" id="others">
+                        <h3>Outras Tecnologias</h3>
+                        <ul>
+                            <li>APIs RESTful</li>
+                            <li>Figma</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
+                    <div class="technology-category" id="languages">
+                        <h3>Linguagens</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="/images/insta.png" alt="Projeto 1" class="img-projeto">
+                    <a href="https://github.com/rlsgabriella/insta-teste" class="btn-projeto">Ver Projeto</a>
+                </div>
+                <div class="card">
+                    <img src="/images/dripstore.png" alt="Projeto 2" class="img-projeto">
+                    <a href="ttps://github.com/Fabrasss/drip-store" class="btn-projeto">Ver Projeto</a>
+                </div>
+    
+                <div class="card">
+                    <img src="images/btx-page.png" alt="Projeto 4" class="img-projeto">
+                    <a href="https://github.com/rlsgabriella/page-bt" class="btn-projeto">Ver Projeto</a>
+                </div>
+            </div>
+        </section>
+
+
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer>
+        <h3>Conecte-se comigo:</h3>
+        <div>
+            <a href="https://www.linkedin.com/in/gabriella-rodrigues-5b5416199/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/rlsgabriella" target="_blank" class="social-link">
+                <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="/docs/Curriculo atualizado.pdf" target="_blank" class="social-link">
+                <i class="fas fa-file-alt fa-2x"></i>
+            </a>
+        </div>
+    </footer>
 
 
 
