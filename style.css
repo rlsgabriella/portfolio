@@ -279,6 +279,21 @@ h2 {
     margin-bottom: 10px;
 }
 
+.technology-category:hover {
+    box-shadow: 0 0 15px 5px rgba(128, 0, 128, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.card {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+
+
 .btn-projeto {
     text-decoration: none;
     padding: 10px 20px;
