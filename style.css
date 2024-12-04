@@ -71,15 +71,17 @@ header nav ul li {
 }
 
 @media (max-width: 768px) {
-    section.header .flex {
+    header>.interface {
         flex-direction: column;
-        gap: 30px;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
     }
-}
 
-.btn-contato button:hover {
-    box-shadow: 0px 0px 8px hsla(0, 0%, 100%, 0.856);
-    transform: scale(1.05);
+    header nav ul li {
+        display: block; 
+        padding: 10px 0; 
+    }
 }
 
 /* Topo */
@@ -124,7 +126,10 @@ section.topo-site h1 {
     transition: 0.3s;
 }
 
-
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px hsla(0, 0%, 100%, 0.856);
+    transform: scale(1.05);
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
